@@ -6,6 +6,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 CosmosFin is a Next.js 15 + React 19 + TypeScript application using Tailwind CSS v4 for styling and GSAP for animations.
 
+**About Cosmos Financial Group:**
+- India-based financial services company (Headquarters: Delhi, India)
+- Public company with 11-50 employees
+- Focus: Alternative asset management, corporate advisory, investment opportunities
+- Slogan: "An Avant-Garde FinServ Co. | Creating Cosmos of Sieved Investment. Elevating Opportunities, Unlocking Prosperity"
+
+**Content Guidelines:**
+- ONLY use factual information from [content.md](content.md)
+- NEVER assume or invent stats, years of experience, client numbers, or any claims not explicitly stated
+- We are a serious finance group - accuracy and truthfulness are paramount
+
 ## Development Commands
 
 - **Start dev server**: `pnpm dev` (or `npm run dev`) - runs Next.js dev server with Turbopack
