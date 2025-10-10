@@ -64,49 +64,49 @@ export default function Home() {
 
           {/* Letter F - 4 vertical lines + 6 horizontal lines (3 top, 3 middle) */}
           <div className="relative w-28 h-36 sm:w-32 sm:h-44 md:w-36 md:h-56">
-            {/* 4 Vertical lines */}
+            {/* 4 Vertical lines - closer spacing */}
             <div
               className={`absolute left-[5%] top-0 w-[3px] bg-[#2596be] origin-top transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-full opacity-100' : 'h-0 opacity-0'}`}
               style={{ transitionDelay: '750ms' }}
             />
             <div
-              className={`absolute left-[15%] top-0 w-[3px] bg-[#2596be] origin-top transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-full opacity-100' : 'h-0 opacity-0'}`}
+              className={`absolute left-[12%] top-0 w-[3px] bg-[#2596be] origin-top transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-full opacity-100' : 'h-0 opacity-0'}`}
               style={{ transitionDelay: '850ms' }}
             />
             <div
-              className={`absolute left-[25%] top-0 w-[3px] bg-[#2596be] origin-top transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-full opacity-100' : 'h-0 opacity-0'}`}
+              className={`absolute left-[19%] top-0 w-[3px] bg-[#2596be] origin-top transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-full opacity-100' : 'h-0 opacity-0'}`}
               style={{ transitionDelay: '950ms' }}
             />
             <div
-              className={`absolute left-[35%] top-0 w-[3px] bg-[#2596be] origin-top transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-full opacity-100' : 'h-0 opacity-0'}`}
+              className={`absolute left-[26%] top-0 w-[3px] bg-[#2596be] origin-top transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-full opacity-100' : 'h-0 opacity-0'}`}
               style={{ transitionDelay: '1050ms' }}
             />
 
-            {/* 3 Horizontal lines at top - full width */}
+            {/* 3 Horizontal lines at top - starting from top */}
             <div
-              className={`absolute top-[5%] left-[35%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[65%] opacity-100' : 'w-0 opacity-0'}`}
+              className={`absolute top-0 left-[26%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[74%] opacity-100' : 'w-0 opacity-0'}`}
               style={{ transitionDelay: '1200ms' }}
             />
             <div
-              className={`absolute top-[12%] left-[35%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[65%] opacity-100' : 'w-0 opacity-0'}`}
+              className={`absolute top-[7%] left-[26%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[74%] opacity-100' : 'w-0 opacity-0'}`}
               style={{ transitionDelay: '1300ms' }}
             />
             <div
-              className={`absolute top-[19%] left-[35%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[65%] opacity-100' : 'w-0 opacity-0'}`}
+              className={`absolute top-[14%] left-[26%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[74%] opacity-100' : 'w-0 opacity-0'}`}
               style={{ transitionDelay: '1400ms' }}
             />
 
             {/* 3 Horizontal lines at middle - shorter */}
             <div
-              className={`absolute top-[50%] left-[35%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[50%] opacity-100' : 'w-0 opacity-0'}`}
+              className={`absolute top-[50%] left-[26%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[55%] opacity-100' : 'w-0 opacity-0'}`}
               style={{ transitionDelay: '1500ms' }}
             />
             <div
-              className={`absolute top-[57%] left-[35%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[50%] opacity-100' : 'w-0 opacity-0'}`}
+              className={`absolute top-[57%] left-[26%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[55%] opacity-100' : 'w-0 opacity-0'}`}
               style={{ transitionDelay: '1600ms' }}
             />
             <div
-              className={`absolute top-[64%] left-[35%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[50%] opacity-100' : 'w-0 opacity-0'}`}
+              className={`absolute top-[64%] left-[26%] h-[3px] bg-[#2596be] origin-left transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'w-[55%] opacity-100' : 'w-0 opacity-0'}`}
               style={{ transitionDelay: '1700ms' }}
             />
           </div>
