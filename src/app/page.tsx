@@ -24,7 +24,7 @@ export default function Home() {
     document.body.style.overflow = 'hidden';
 
     // Calculate total animation duration:
-    // - Last G line: 2700ms delay + 800ms duration = 3500ms
+    // - Last G line: 2950ms delay + 800ms duration = 3750ms
     // - Text starts: 3200ms
     // - Last character (22nd): 3200 + (21 * 40) = 4040ms
     // - Last character completes: 4040 + 600 = 4640ms
@@ -219,8 +219,10 @@ export default function Home() {
             />
           </div>
 
-          {/* Letter G - 5 concentric semi-circles + 4 vertical lines on right */}
+          {/* Letter G - C arcs + vertical lines connecting from right side at 50% height downward */}
           <div className="relative w-[clamp(5rem,12vw,11rem)] h-[clamp(6.5rem,15vw,14rem)]">
+
+            {/* TOP & LEFT & BOTTOM: 4 concentric arcs (full C shapes) */}
             {/* Arc 1 - outermost */}
             <div
               className={`absolute top-0 left-0 w-full h-full border-l-[clamp(2px,0.25vw,3px)] border-t-[clamp(2px,0.25vw,3px)] border-b-[clamp(2px,0.25vw,3px)] border-[#2596be] transition-all duration-900 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
@@ -245,7 +247,7 @@ export default function Home() {
                 transitionDelay: '2050ms'
               }}
             />
-            {/* Arc 4 */}
+            {/* Arc 4 - innermost */}
             <div
               className={`absolute top-[18%] left-[18%] w-[64%] h-[64%] border-l-[clamp(2px,0.25vw,3px)] border-t-[clamp(2px,0.25vw,3px)] border-b-[clamp(2px,0.25vw,3px)] border-[#2596be] transition-all duration-900 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
               style={{
@@ -253,30 +255,23 @@ export default function Home() {
                 transitionDelay: '2150ms'
               }}
             />
-            {/* Arc 5 - innermost */}
-            <div
-              className={`absolute top-[24%] left-[24%] w-[52%] h-[52%] border-l-[clamp(2px,0.25vw,3px)] border-t-[clamp(2px,0.25vw,3px)] border-b-[clamp(2px,0.25vw,3px)] border-[#2596be] transition-all duration-900 ease-[cubic-bezier(0.22,1,0.36,1)] ${animate ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
-              style={{
-                borderRadius: '50% 0 0 50%',
-                transitionDelay: '2250ms'
-              }}
-            />
 
-            {/* 4 Vertical lines on right side */}
+            {/* VERTICAL LINES: Connecting from the right endpoints of arcs downward (creating G closure) */}
+            {/* These lines start at ~50% height where the arcs' right edge is, and go down */}
             <div
-              className={`absolute right-[5%] top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[35%] opacity-100' : 'h-0 opacity-0'}`}
+              className={`absolute right-0 top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[35%] opacity-100' : 'h-0 opacity-0'}`}
+              style={{ transitionDelay: '2250ms' }}
+            />
+            <div
+              className={`absolute right-[6%] top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[32%] opacity-100' : 'h-0 opacity-0'}`}
               style={{ transitionDelay: '2400ms' }}
             />
             <div
-              className={`absolute right-[15%] top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[35%] opacity-100' : 'h-0 opacity-0'}`}
-              style={{ transitionDelay: '2500ms' }}
+              className={`absolute right-[12%] top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[29%] opacity-100' : 'h-0 opacity-0'}`}
+              style={{ transitionDelay: '2550ms' }}
             />
             <div
-              className={`absolute right-[25%] top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[35%] opacity-100' : 'h-0 opacity-0'}`}
-              style={{ transitionDelay: '2600ms' }}
-            />
-            <div
-              className={`absolute right-[35%] top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[35%] opacity-100' : 'h-0 opacity-0'}`}
+              className={`absolute right-[18%] top-[50%] w-[clamp(2px,0.25vw,3px)] bg-[#2596be] origin-top transition-all duration-800 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${animate ? 'h-[26%] opacity-100' : 'h-0 opacity-0'}`}
               style={{ transitionDelay: '2700ms' }}
             />
           </div>
